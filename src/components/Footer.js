@@ -2,10 +2,10 @@ const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <div>
-          <img src="/logo.png" alt="logo" />
-        </div>
-        <div>
+       
+        <img src="/logo.png" alt="logo" />
+        
+      
           <nav>
             <ul>
               <li>Doormat navigation</li>
@@ -41,11 +41,6 @@ const Footer = () => {
             <li>Facebook</li>
             <li>Youtube</li>
           </ul>
-
-          <nav>
-            <ul></ul>
-          </nav>
-        </div>
       </div>
     </footer>
   );
