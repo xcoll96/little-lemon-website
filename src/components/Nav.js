@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom"
+
 const Nav = () => {
   return (
     <nav>
       <ul className="main-nav">
         <li className="main-nav__item">
-          <a href="/home">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li className="main-nav__item">
           <a href="/about">About</a>
@@ -12,7 +14,7 @@ const Nav = () => {
           <a href="/menu">Menu</a>
         </li>
         <li className="main-nav__item">
-          <a href="/reservations">Reservations</a>
+          <Link to="/reservations">Reservations</Link>
         </li>
         <li className="main-nav__item">
           <a href="/order-online">Order Online</a>
