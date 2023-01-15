@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer className="section">
       <div className="container">
        
-        <img src="/logo.png" alt="logo" />
+        <img src="/images/footer-logo.jpg" alt="Little Lemon's logo" />
         
       
           <nav>
