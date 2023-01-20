@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #495e57;
   margin: 0;
@@ -74,7 +78,8 @@ p {
   max-width: 40ch;
 }
 
-section, footer {
+section,
+footer {
   padding: 5rem 0;
 }
 
@@ -159,7 +164,8 @@ section, footer {
   margin-bottom: 4rem;
 }
 
-.hero-section h1 {
+.hero-section h1,
+.reservations-header h1 {
   color: #f4ce14;
 }
 
@@ -313,8 +319,56 @@ section, footer {
   border-radius: 1rem;
 }
 
+.reservations-header {
+  background-color: #495e57;
+}
+
+.time-slots-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.time-slot {
+  border: solid 1px rgba(0,0,0,.5);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.time-slot.unavailable {
+  opacity: .5;
+}
+
+form {
+  max-width: 42rem;
+  margin: auto;
+}
+
+.two-col-row {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.two-col-row > div {
+  width: 50%;
+}
+
+label {
+  color: #000;
+  font-weight: 600;
+}
+
+input, select {
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
+  display: block;
+  margin: .5rem 0 2rem 0;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+
 footer {
-  background-color: #495E57;
+  background-color: #495e57;
 }
 
 footer > .container {
@@ -334,12 +388,12 @@ footer ul {
 }
 
 footer li {
-  color: #EDEFEE;
+  color: #edefee;
   margin-bottom: 1rem;
 }
 
 footer a {
-  color: #EDEFEE;
+  color: #edefee;
   text-decoration: none;
 }
 
@@ -348,16 +402,15 @@ footer a:hover {
 }
 
 footer a:active {
-  color: #F4CE14;
+  color: #f4ce14;
 }
 
-
 footer ul li:first-child {
-  color: #F4CE14;
+  color: #f4ce14;
   font-size: 1.125rem;
   line-height: 1.5rem;
   font-weight: 600;
-} 
+}
 
 /*BREAKPOINTS*/
 @media (max-width: 1024px) {
