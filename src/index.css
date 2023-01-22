@@ -90,6 +90,10 @@ footer {
   margin-bottom: 2rem;
 }
 
+.section-header.is-centered {
+  justify-content: center;
+}
+
 .container {
   max-width: 64rem;
   margin: 0 auto;
@@ -323,19 +327,30 @@ footer {
   background-color: #495e57;
 }
 
+.reservations-header h1 {
+  text-align: center;
+}
+
 .time-slots-wrapper {
   display: flex;
   gap: 1rem;
+  list-style: none;
+  justify-content: center;
+  margin: 0 0 4rem 0;
+  padding-left: 0;
 }
 
 .time-slot {
-  border: solid 1px rgba(0,0,0,.5);
+  border: solid 1px #495e57;
+  border-radius: 50px;
+  color: #495e57;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
 }
 
 .time-slot.unavailable {
-  opacity: .5;
+  opacity: .3;
 }
 
 form {
