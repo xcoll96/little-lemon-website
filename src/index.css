@@ -114,6 +114,11 @@ footer {
   text-decoration: none;
 }
 
+.primary-btn.disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
 .text-btn {
   align-items: center;
   color: #000;
@@ -365,7 +370,12 @@ form {
 }
 
 .two-col-row > div {
+  padding-bottom: 2rem;
   width: 50%;
+}
+
+.one-col-row {
+  padding-bottom: 2rem;
 }
 
 label {
@@ -377,9 +387,62 @@ input, select {
   border: solid 1px rgba(0, 0, 0, 0.15);
   border-radius: 0.5rem;
   display: block;
-  margin: .5rem 0 2rem 0;
+  margin-top: .5rem;
   padding: 0.75rem 1rem;
   width: 100%;
+}
+
+.input-error {
+  border: solid 1px #E64848;
+}
+
+.input-error-message {
+  color: #E64848;
+  margin: 0.25rem 0 0 0;
+  font-size: 0.875rem;
+}
+
+.confirmation-page {
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.confirmation-page > div {
+  width: 50%;
+  position: relative;
+}
+
+.confirmation-page div:first-child {
+  padding-right: 4rem;
+}
+
+.confirmation-img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.confirmation-icon {
+  margin-bottom: 0.5rem;
+}
+
+
+.confirmation-details {
+list-style: none;
+margin-top: 2rem;
+padding: 0;
+} 
+
+.confirmation-details li {
+  border-bottom: solid 1px #edefee;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.confirmation-details li span:first-child {
+  color: rgb(0,0,0);
+  font-weight: 600;
 }
 
 footer {
@@ -433,6 +496,22 @@ footer ul li:first-child {
     grid-template-columns: 1fr 1fr;
     grid-rows: auto;
   }
+
+  .confirmation-page {
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .confirmation-page > div {
+    max-width: 32rem;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .confirmation-page div:first-child {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -468,6 +547,10 @@ footer ul li:first-child {
   footer > .container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  .confirmation-page {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 @media (max-width: 640px) {
